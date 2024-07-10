@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ランダムリダイレクト</title>
+    <script>
+        var urls = [
+            'https://forms.gle/iA86wd4TUCjJXZxw7',
+            'https://forms.gle/wF7BvbUqYRaaNXvy6',
+            'https://forms.gle/MTRJwjNYWKUUATP19'
+        ];
+ 
+        function redirectToRandomURL() {
+            var randomIndex = Math.floor(Math.random() * urls.length);
+            window.location.href = urls[randomIndex];
+        }
+    </script>
+</head>
+<body onload="redirectToRandomURL()">
+    <h1>ランダムリダイレクト中...</h1>
+</body>
+</html>
